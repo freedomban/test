@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<!-- <link rel="stylesheet" href="/src/sass/style.css"> -->
+<link rel="stylesheet" href="./css/style.css">
+<link rel="shortcut icon" href="./img/logo_icon.png">
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<!-- header -->
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+<!-- <link rel="shortcut icon" href="/src/img/logo_icon.png"> -->
+<!-- <link rel="stylesheet" href="/dist/css/style.css"> -->
+<!-- <link rel="stylesheet" href="/src/sass/style.css"> -->
+<!-- <link rel="stylesheet" href="/src/sass/layout/_header.scss"> -->
+<!-- <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Ashopping_cart%3A"> -->
+
+<!-- for shop -->
+<!-- 上滑 -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+<!-- 熱門商品輪播 -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- footer -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Ashopping_cart%3A">
+<!-- <link rel="shortcut icon" href="../img/logo_icon.png"> -->
+<!-- <link rel="stylesheet" href="./sass/layout/_footer.scss"> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <title>光緣畫廊 | KUANG YUAN</title>
+    </head>
+<body>
+    <div class="wrapper_melon">
+        <div class="header_potter">
+            <div class="logo">
+                <img src="./img/logo_icon.png" alt="logo" >
+            </div>
+            <div class="con_h6">
+                <h6>帳號登出</h6>
+            </div>
+        </div>
+        <section class="sideLeft">
+            <div class="content_left">
+                <h6 class="wd-border">後臺管理</h6>
+                <aside class="side_left">
+                    <ul>
+                        <ol>
+                            <a href="./b_member.html">會員管理</a>
+                        </ol>
+                        <ol>
+                            <a href="./b_order.html">訂單管理</a>
+                        </ol>
+                        <ol>
+                            <a href="#" id="b_color_label" id="b_color_label">商品管理</a>
+                        </ol>
+                        <ol>
+                            <a href="./b_item_exhibits.html">展品管理</a>
+                        </ol>
+                        <ol>
+                            <a href="./b_discount.html">折扣碼管理</a>
+                        </ol>
+                    </ul>
+                </aside>
+            </div>
+            <div class="sideRight">
+                <div class="channel-around">
+                    <div class="page_title2">
+                        <h6>商品管理</h6>
+                    </div>   
+                    <ul class="list_co btn-group" role="group">
+                        <li>
+                            <button type="button" class="btn btn-primary">上架</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary">下架</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#product_newBackdrop">新增</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary">刪除</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_product">
+                    <table class="table  align-middle table-striped">
+                        <thead>
+                            <tr class="table_color">
+                                <th scope="col">#</th>
+                                <th scope="col">封面</th>
+                                <th scope="col">商品編號</th>
+                                <th scope="col">名稱</th>
+                                <th scope="col">價格</th>
+                                <th scope="col">數量</th>
+                                <th scope="col">產品作家</th>
+                                <th scope="col">商品狀態</th> 
+                                <th scope="col"></th>  
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        </label>
+                                    </div>
+                                    <td>
+                                        <div class="size align-bottom">
+                                            <img src="./img/Shop/hot-prodts/h-p-1.png" alt="product_photo">
+                                        </div>
+                                    </td>
+                                    <td>1</td>
+                                    <td>馬克杯</td>
+                                    <td>499</td>
+                                    <td>399</td>
+                                    <td>Vincent van Gogh</td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input status_toggle" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#product_editBackdrop">
+                                            編輯與查看
+                                        </button>
+                                    </td>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>                 
+        </section>
+        <!-- 新增商品視窗 ------------->
+
+        <!-- ------------------------------ -->
+
+        <section>
+            <div class="modal fade" id="product_newBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="exampleModalLabel">新增商品</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <!-- 新增商品名稱 -->
+                                <div class="form-group">
+                                    <label for="product_newName"></label>
+                                    <input type="text" id="product_newName" name="item[name]" class="form-control" placeholder="商品名稱">
+                                </div>
+                                <!-- 新增商品作家 -->
+                                <div class="form-group option_spacing">
+                                    <select>
+                                        <option>請選擇作者</option>
+                                        <option>Vincent van Gogh</option>
+                                        <option>Pablo Ruiz Picasso</option>
+                                        <option>Oscar-Claude Monet</option>
+                                        <option>Leonardo da Vinci</option>
+                                    </select>
+                                </div>
+                                <!-- 新增商品價格、數量 -->
+                                <div class="form-group level">
+                                    <div class="input-borad">
+                                        <label for="product_newPrice"></label>
+                                        <input type="text" id="product_newPrice" name="item[price]" class="form-control" placeholder="價格">
+                                    </div>
+                                    <div class="input-borad">
+                                        <label for="product_newCount"></label>
+                                        <input type="text" id="product_newCount" name="item[quantity]" class="form-control" placeholder="數量">
+                                    </div>
+                                </div>
+                                <!-- 新增商品描述 -->
+                                <div class="form-group input-borad">
+                                    <label for="product_newDescribe"></label>
+                                    <textarea id="product_newDescribe" rows="3" cols="40" name="item[describe]" placeholder="展品描述"></textarea>
+                                </div>
+                                <!-- 新增商品檔案上傳 -->
+                                <div class="form-check form-check-borad">
+                                    <div class="form-group file-borad">
+                                        <input type="file" id="item_upLoad" name="item[photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <div>  
+                                            <img class="preview">
+                                            <div class="preview_size"></div>
+                                        </div>
+                                        <input type="file" id="item_upLoad" name="item[photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <div>  
+                                            <img class="preview">
+                                            <div class="preview_size"></div>
+                                        </div>
+                                        <input type="file" id="item_upLoad" name="item[photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <div>  
+                                            <img class="preview">
+                                            <div class="preview_size"></div>
+                                        </div>
+                                        <input type="submit" class="file-borad2" value="上傳">
+                                    </div>
+                                    <div class="form-group"> 
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <h6>此產品是否直接上架</h6>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            <button type="button" class="btn btn-primary">儲存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 編輯與查看視窗----------------------- -->
+
+        <!-- ------------------------------------------- -->
+        <section>  
+            <!-- Modal -->
+            <div class="modal fade" id="product_editBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="exampleModalLabel">編輯商品</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            商品編號:12345
+                            <form>
+                                 <!-- 編輯商品名稱 -->
+                                <div class="form-group">
+                                    <label for="product_editName"></label>
+                                    <input type="text" id="product_editName" name="item[edit_name]" class="form-control" placeholder="名稱">
+                                </div>
+                                <!-- 編輯商品作家 -->
+                                <div class="form-group option_spacing">
+                                    <select>
+                                        <option>請選擇作者</option>
+                                        <option>Vincent van Gogh</option>
+                                        <option>Pablo Ruiz Picasso</option>
+                                        <option>Oscar-Claude Monet</option>
+                                        <option>Leonardo da Vinci</option>
+                                    </select>
+                                </div>
+                                <!-- 編輯商品數量；價格 -->
+                                <div class="form-group level">
+                                    <div class="input-borad">
+                                        <label for="product_editPrice"></label>
+                                        <input type="text" id="product_editPrice" name="item[edit_price]" class="form-control" placeholder="價格">
+                                    </div>
+                                    <div class="input-borad">
+                                        <label for="product_editCount"></label>
+                                        <input type="text" id="product_editCount" name="item[edit_quantity]" class="form-control" placeholder="數量">
+                                    </div>
+                                </div>
+                                <!-- 編輯商品描述 -->
+                                <div class="form-group input-borad">
+                                    <label for="product_editDescribe"></label>
+                                    <textarea id="product_editDescribe" rows="3" cols="40" name="item[edit_describe]" placeholder="展品描述"></textarea>
+                                </div>
+                                <!-- 編輯商品檔案 -->
+                                <div class="form-check form-check-borad">
+                                    <div class="form-group file-borad">
+                                        <input type="file" id="item_upLoad" name="item[edit_photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <div>  
+                                            <img class="preview">
+                                            <div class="preview_size"></div>
+                                        </div>
+                                        <input type="file" id="item_upLoad" name="item[edit_photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <div>  
+                                            <img class="preview">
+                                            <div class="preview_size"></div>
+                                        </div>
+                                        <input type="file" id="item_upLoad" name="item[edit_photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <div>  
+                                            <img class="preview">
+                                            <div class="preview_size"></div>
+                                        </div>
+                                        <input type="submit" class="file-borad2" value="上傳">
+                                    </div>
+                                    <div class="form-group"> 
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        <h6>此產品是否直接上架</h6>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            <button type="button" class="btn btn-primary">儲存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script> 
+     // 檔案預覽
+        function format_float(num, pos)
+        {
+            var size = Math.pow(10, pos);
+            return Math.round(num * size) / size;
+        }
+    
+        function preview(input) {
+    
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function (e) {
+                    $('.preview').attr('src', e.target.result);
+                    var KB = format_float(e.total / 1024, 2);
+                    $('.preview_size').text("檔案大小：" + KB + " KB");
+                }
+    
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    
+        $("body").on("change", "#item_upLoad", function (){
+            preview(this);
+        })
+    </script>
+</body>
+</html> 
