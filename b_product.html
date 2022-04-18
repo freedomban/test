@@ -192,22 +192,25 @@
                                 <!-- 新增商品檔案上傳 -->
                                 <div class="form-check form-check-borad">
                                     <div class="form-group file-borad">
-                                        <input type="file" id="item_upLoad" name="item[photo]" accept="image/*" class="form-control" multiple="multiple">
-                                        <div>  
-                                            <img class="preview">
-                                            <div class="preview_size"></div>
-                                        </div>
-                                        <input type="file" id="item_upLoad" name="item[photo]" accept="image/*" class="form-control" multiple="multiple">
-                                        <div>  
-                                            <img class="preview">
-                                            <div class="preview_size"></div>
-                                        </div>
-                                        <input type="file" id="item_upLoad" name="item[photo]" accept="image/*" class="form-control" multiple="multiple">
-                                        <div>  
-                                            <img class="preview">
-                                            <div class="preview_size"></div>
-                                        </div>
-                                        <input type="submit" class="file-borad2" value="上傳">
+                                        <form method="POST" action="product_insert.php" enctype="multipart/form-data">
+                                            <input type="file" id="item_upLoad1" name="item[photo1]" accept="image/*" class="form-control" multiple="multiple">
+                                            <div>  
+                                                <img class="preview">
+                                                <div class="preview_size"></div>
+                                            </div>
+                                            <input type="file" id="item_upLoad2" name="item[photo2]" accept="image/*" class="form-control" multiple="multiple">
+                                            <div>  
+                                                <img class="preview">
+                                                <div class="preview_size"></div>
+                                            </div>
+                                            <input type="file" id="item_upLoad3" name="item[photo3]" accept="image/*" class="form-control" multiple="multiple">
+                                            <div>  
+                                                <img class="preview">
+                                                <div class="preview_size"></div>
+                                            </div>
+                                            <input type="submit" name="submit" class="file-borad2" value="上傳">
+                                        </form>
+                                        
                                     </div>
                                     <div class="form-group"> 
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -274,22 +277,22 @@
                                 <!-- 編輯商品檔案 -->
                                 <div class="form-check form-check-borad">
                                     <div class="form-group file-borad">
-                                        <input type="file" id="item_upLoad" name="item[edit_photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <input type="file" id="item_upLoad1" name="item[edit_photo1]" accept="image/*" class="form-control" multiple="multiple">
                                         <div>  
                                             <img class="preview">
                                             <div class="preview_size"></div>
                                         </div>
-                                        <input type="file" id="item_upLoad" name="item[edit_photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <input type="file" id="item_upLoad2" name="item[edit_photo2]" accept="image/*" class="form-control" multiple="multiple">
                                         <div>  
                                             <img class="preview">
                                             <div class="preview_size"></div>
                                         </div>
-                                        <input type="file" id="item_upLoad" name="item[edit_photo]" accept="image/*" class="form-control" multiple="multiple">
+                                        <input type="file" id="item_upLoad3" name="item[edit_photo3]" accept="image/*" class="form-control" multiple="multiple">
                                         <div>  
                                             <img class="preview">
                                             <div class="preview_size"></div>
                                         </div>
-                                        <input type="submit" class="file-borad2" value="上傳">
+                                        <input type="submit" name="submit" class="file-borad2" value="上傳">
                                     </div>
                                     <div class="form-group"> 
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -331,7 +334,7 @@
             }
         }
     
-        $("body").on("change", "#item_upLoad", function (){
+        $("body").on("change", "#item_upLoad1 #item_upLoad2 #item_upLoad3", function (){
             preview(this);
         })
     </script>
